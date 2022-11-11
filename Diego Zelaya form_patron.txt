@@ -1,0 +1,46 @@
+Diego Zelaya form_patron_phpDB_test.
+
+T 1
+
+CREATE TABLE Employee ( ssn VARCHAR(255) NOT NULL , lastname VARCHAR(40) NOT NULL , firstname VARCHAR(30) NULL , department_code INT(3) NOT NULL , annual_salary DOUBLE NULL , hire_date DATE NOT NULL , PRIMARY KEY (ssn));
+
+T 2 
+
+CREATE TABLE Department ( department_code INT(3) NOT NULL , department_name VARCHAR(30) NOT NULL , PRIMARY KEY 
+(department_code));
+
+T 3 
+
+INSERT INTO Employee (ssn, lastname, firstname, department_code, annual_salary, hire_date) 
+VALUES ('111-22-3333', 'Smith', 'John', '234', '50000.00', '1999-10-15');
+INSERT INTO Employee (ssn, lastname, firstname, department_code, annual_salary, hire_date) 
+VALUES ('222-33-4444', 'Jones', 'Mary', 234, '56000.00', '1998-01-02');
+
+T 4: 
+
+
+INSERT INTO Department (department_code, department_name) 
+VALUES ('234', 'Information Services');
+INSERT INTO Department (department_code, department_name) 
+VALUES ('456', 'System Group');
+INSERT INTO Department (department_code, department_name) 
+VALUES ('657', 'Payroll');
+
+
+T 5:
+SELECT lastname, firstname, hire_date FROM Employee ORDER BY lastname ASC;
+
+T 6:
+SELECT avg(annual_salary) FROM Employee;
+
+T 7:
+
+DELETE from Employee WHERE firstname = 'John' AND lastname = 'Smith';
+
+T 8
+
+UPDATE Employee SET annual_salary = annual_salary + 1000;
+
+T 9
+
+DROP TABLE Department;

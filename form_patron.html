@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Diego Zelaya -->
+
+<html>
+<head>
+	<title> HTML FORMS </title>
+	<link  rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+<div style="display: flex; justify-content: center;">
+<div id="logo" style="width: 50%;  height: 400px; background-color: #0a0a23; display: flex; justify-content: center;"> <img src="realestatelogoideas04.jpg"> 
+</div>
+</div>
+
+
+<h2 Please sign up</h2>
+<p style="display: flex; justify-content: center;">PLEASE SIGN UP HERE SO WE CAN SEND YOU UPDATES:<br /></p>
+<div id="form1" style="display: flex; justify-content: center;">
+
+	
+
+	<form method="post" action="add_patron.php">
+		<p>
+			First Name:<br />
+			<input type="text" name="firstName" size="30"  />
+		</p>
+
+		<p>
+			Last Name:<br />
+			<input type="text" name="lastName" size="30"  />
+		</p>
+
+		<p>
+			Email:<br />
+			<input type="text" name="eMail" size="30"  />
+		</p>
+
+		<p>
+			Birth Year:<br />
+			<input type="text" name="birthYear" size="4"  />
+		</p>
+
+
+	<p>
+	City of Residence<br />
+	<select name="cityName" size="1">
+		<option value="-"> - </option>
+		<option value="Chicago"> Chicago</option>
+		<option value="Detroit"> Detroit</option>
+		<option value="Toronto"> Toronto</option>
+	</select>
+	</p>
+
+		<p>
+			<input type="submit" value="Submit Information" />
+		</p>
+<p>
+		<!-- For Admin Use Only: <span style="text-decoration: underline; color: blue;"><a href="add_patron.php"> View Patrons</a></span> -->
+		<!-- For Admin Use Only: <span style="text-decoration: underline; color: blue;"><a href="add_patron.php"> View Patrons</a></span> -->
+		For Admin Use Only: <span style="text-decoration: underline; color: blue;"> <a href="display_table.php"> View Patrons</a></span>
+
+
+</p>
+	</form>
+
+</div>
+
+
+	
+
+
+</body>
+</html>

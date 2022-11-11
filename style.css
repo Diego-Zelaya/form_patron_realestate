@@ -1,0 +1,49 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	background-color: #F0E68C;
+}
+
+p {
+	font-size:16px;
+} 
+
+input {
+	font-size: 16px;
+}
+
+#form1
+{
+	position:static;
+	background-color:#E6E6FA;
+	top: 100px;
+	left: 10px;
+	width: 350px;
+	height: 400px;
+	padding: 10px;
+}
+
+#logo{
+	top: 0px;
+	margin:0px; 
+	padding:0px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:800px;
+}
+
+/* #display_titles
+{
+	font-size: 40px;
+} */
+
+/* h5.display_titles
+{
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+	position: relative;
+  	width: -300px;
+}
+ */
